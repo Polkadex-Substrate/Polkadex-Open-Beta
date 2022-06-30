@@ -1,0 +1,16 @@
+---
+name: Feedback
+about: 'Submit feedback about the Polkadex Beta '
+title: 'Name of the Issue '
+labels: ''
+assignees: ''
+
+---
+
+```
+By raising this issue, I agree to the terms and conditions presented by Polkadex here: <link> 
+``` 
+**Description** 
+Please provide a clear and concise description of the bug you came across/your feedback. Include steps to reproduce and any screenshots if necessary. 
+
+onchainaddress:{Insert your onchain address within the braces}

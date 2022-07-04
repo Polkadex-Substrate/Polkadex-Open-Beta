@@ -37,7 +37,7 @@ With the singular goal in mind to make our products better by taking into accoun
 
 1. Medium-level vulnerabilities that are important to fix; however, that cannot lead to assets loss or data manipulations.
     1. Ex: Orderbook not accepting orders
-    2. Ex: No new investors not being able to participate in the rounds
+    2. Ex: New investors not being able to participate in the rounds
 
 **Level 3**
 

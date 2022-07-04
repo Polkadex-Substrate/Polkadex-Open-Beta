@@ -13,4 +13,4 @@ assignees: ''
 **Description** 
 Please provide a clear and concise description of the bug you came across/your feedback. Include steps to reproduce and any screenshots if necessary. 
 
-onchainaddress:{Insert your onchain address within the braces}
+onchainaddress:{Insert your onchain address within the braces without any spaces}

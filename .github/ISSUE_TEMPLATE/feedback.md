@@ -1,6 +1,6 @@
 ---
 name: Feedback
-about: 'Submit feedback about the Polkadex Beta '
+about: 'Submit feedback on Polkadex products '
 title: 'Name of the Issue '
 labels: ''
 assignees: ''

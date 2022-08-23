@@ -64,11 +64,16 @@ With the singular goal in mind to make our products better by taking into accoun
     | 2 | 10% |
     | 3 | 5% |
 
+**Note**
+
+Top Tester rewards will be introduced when the team deems that there's a significant number of people participating in the program. The team will activate or discontinue the Top Tester rewards as and when required based on participation. The team's decision is final and will be communicated through our social media channels when the Top Tester rewards are active.
 
 **Contact**
 
 1. You can contact us through our discord/telegram channel for any questions/concerns related to the program [here](https://discord.gg/mVvTSBE3JY)
 
-**Note**
-
-Top Tester rewards will be introduced when the team deems that there's a significant number of people participating in the program. The team will activate or discontinue the Top Tester rewards as and when required based on participation. The team's decision is final and will be communicated through our social media channels when the Top Tester rewards are active.
+Known Critical Issues: 
+1. Partially filled orders are not showing up in the user's Order History. The order maker's order history is updating, but the order taker's order history isn't.
+2. Orderbook desynchronization error where the orders that are supposed to match may remain open
+3. Last Trade price and Ticker price mismatch
+4. Import Account functionality to be added soon

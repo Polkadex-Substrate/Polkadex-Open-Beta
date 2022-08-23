@@ -26,7 +26,7 @@ jobs:
           labels: Unconfirmed
 
   star_1:
-    if: github.event.label.name == 'Normal'
+    if: github.event.label.name == 'Normal' && github.event.label.name == 'Aug19-Oct2' 
     runs-on: ubuntu-latest
     
     steps:
@@ -55,7 +55,7 @@ jobs:
             This issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
   
   star_2:
-    if: github.event.label.name == 'Moderate'
+    if: github.event.label.name == 'Moderate' && github.event.label.name == 'Aug19-Oct2' 
     runs-on: ubuntu-latest
     
     steps:
@@ -83,7 +83,7 @@ jobs:
           body: |
             This issue is available for anyone to work on. **Make sure to reference this issue in your pull request.** :sparkles: Thank you for your contribution! :sparkles:
   star_3:
-    if: github.event.label.name == 'Critical'
+    if: github.event.label.name == 'Critical' && github.event.label.name == 'Aug19-Oct2' 
     runs-on: ubuntu-latest
     
     steps:
@@ -120,4 +120,16 @@ jobs:
         uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
         with:
           add-labels: "Unconfirmed"
-          repo-token: ${{ secrets.GITHUB_TOKEN }}    
+          repo-token: ${{ secrets.GITHUB_TOKEN }} 
+  
+  label_issues_new_cycle:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Label issues
+        uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
+        with:
+          add-labels: "Aug19-Oct2"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}   

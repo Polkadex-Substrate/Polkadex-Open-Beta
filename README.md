@@ -68,3 +68,7 @@ With the singular goal in mind to make our products better by taking into accoun
 **Contact**
 
 1. You can contact us through our discord/telegram channel for any questions/concerns related to the program [here](https://discord.gg/mVvTSBE3JY)
+
+**Note**
+
+Top Tester rewards will be introduced when the team deems that there's a significant number of people participating in the program. The team will activate or discontinue the Top Tester rewards as and when required based on participation. The team's decision is final and will be communicated through our social media channels when the Top Tester rewards are active.

@@ -18,7 +18,10 @@ def update_csv_file():
     substrate = SubstrateInterface(
         url="wss://mainnet.polkadex.trade"
     )
-
+    if onchain_address[0] == '{':
+        size = len(onchain_address)
+        onchain_address = onchain_address[1:size-1]
+    
     try:
         result = substrate.query(
             module='Identity', 
@@ -28,9 +31,12 @@ def update_csv_file():
         onchain_id = result.value['info']['display']['Raw']
     except: 
         print("An exception occured")
+
+    print(onchain_id)
+    
     
 
-    file = open("beta.csv")
+    file = open("reward_cycle_two.csv")
     csvreader = csv.reader(file)
     header = next(csvreader)
     print(header)
@@ -57,7 +63,7 @@ def update_csv_file():
             rows[0][4] = 1 
            
 
-        filename = 'beta.csv'
+        filename = 'reward_cycle_two.csv'
         with open(filename, 'w', newline="") as file:
             csvwriter = csv.writer(file) 
             csvwriter.writerow(header)
@@ -94,7 +100,7 @@ def update_csv_file():
     for x in rows: 
         x[4] = int(x[1]) + int(x[2]) + int(x[3])
     
-    filename = 'beta.csv'
+    filename = 'reward_cycle_two.csv'
     with open(filename, 'w', newline="") as file:
         csvwriter = csv.writer(file) 
         csvwriter.writerow(header)

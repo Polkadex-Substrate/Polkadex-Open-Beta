@@ -1,0 +1,34 @@
+name: Give issues rating 
+
+on: 
+  issues: 
+    types:
+      - labelled 
+      
+jobs: 
+  star_1:
+    if: github.event.label.name == 'Normal' && github.event.label.name == 'Aug19-Oct2' 
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Substrate Interface 
+        run: pip3 install substrate-interface
+
+      - name: Run a one-line script
+        run: python3 script.py "${{ github.event.issue.body }}" 1
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "felixfaisal"
+          git config --global user.email "faisalahmedfarooq46@gmail.com"
+          git add -A
+          git commit -m "add: ${{ github.event.issue.title }}"
+          git push
+      - name: Add comment
+        uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            This issues has been given a rating :sparkles: Thank you for your contribution! :sparkles:

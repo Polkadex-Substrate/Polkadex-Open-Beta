@@ -7,7 +7,7 @@ on:
       
 jobs: 
   star_1:
-    if: ${{ github.event.comment.body == 'Normal' && github.event.author.login == 'felixfaisal' }}
+    if: ${{ github.event.comment.body == 'Normal' && github.event.comment.user.login == 'felixfaisal' }}
     runs-on: ubuntu-latest
     
     steps:

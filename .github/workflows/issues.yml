@@ -3,7 +3,7 @@ name: Give issues rating
 on: 
   issues: 
     types:
-      - labelled 
+      - edited 
       
 jobs: 
   star_1:

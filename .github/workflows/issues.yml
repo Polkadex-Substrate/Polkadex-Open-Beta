@@ -1,11 +1,13 @@
 name: Give issues rating 
 
-on: 
-  issues
+on:
+  issue_comment:
+    types:
+      - created
       
 jobs: 
   star_1:
-    if: github.event.label.name == 'Normal' && github.event.label.name == 'Aug19-Oct2'
+    if: github.event.comment == 'Normal'
     runs-on: ubuntu-latest
     
     steps:

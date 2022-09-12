@@ -7,7 +7,7 @@ on:
       
 jobs: 
   star_1:
-    if: github.event.comment == 'Normal'
+    if: ${{ github.event.comment.body == 'Normal'}}
     runs-on: ubuntu-latest
     
     steps:

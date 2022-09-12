@@ -7,7 +7,7 @@ on:
       
 jobs: 
   star_1:
-    if: github.event.label.name == 'Normal' && github.event.label.name == 'Aug19-Oct2' 
+    if: github.event.label.name == 'Normal'
     runs-on: ubuntu-latest
     
     steps:

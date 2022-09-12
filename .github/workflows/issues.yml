@@ -1,9 +1,7 @@
 name: Give issues rating 
 
 on: 
-  issues: 
-    types:
-      - edited 
+  issues
       
 jobs: 
   star_1:

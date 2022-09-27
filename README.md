@@ -73,7 +73,4 @@ Top Tester rewards will be introduced when the team deems that there's a signifi
 1. You can contact us through our discord/telegram channel for any questions/concerns related to the program [here](https://discord.gg/mVvTSBE3JY)
 
 Known Critical Issues: 
-1. Partially filled orders are not showing up in the user's Order History. The order maker's order history is updating, but the order taker's order history isn't.
-2. Orderbook desynchronization error where the orders that are supposed to match may remain open
-3. Last Trade price and Ticker price mismatch
-4. Import Account functionality to be added soon
+1. Accounts are removed by clearing browser cache/using 'remove from browser option.' But they are not removed from the blockchain. Once the 3 accounts limit is reached, this will throw a proxy limit reached error. New proxy created after clearing the old proxies from blockchain instead of frontend doesn’t work. New Accounts created won’t show up.

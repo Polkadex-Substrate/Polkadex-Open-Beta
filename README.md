@@ -20,9 +20,9 @@ With the singular goal in mind to make our products better by taking into accoun
 
 | Level | Reward Pool (worth of PDEX) | Distribution Timeline |
 | --- | --- | --- |
-| 1. Critical (⭐️ ⭐️ ⭐️)  | TBA | 45 Days |
-| 2. Moderate (⭐️ ⭐️) | TBA | 45 Days |
-| 3. Normal (⭐️) | TBA | 45 Days |
+| 1. Critical (⭐️ ⭐️ ⭐️)  | $2000 | 45 Days |
+| 2. Moderate (⭐️ ⭐️) | $1000 | 45 Days |
+| 3. Normal (⭐️) | $500 | 45 Days |
 | 4. Acknowledgement | N/A | N/A |
 
 **Description of Levels**

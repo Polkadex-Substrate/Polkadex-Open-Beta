@@ -6,21 +6,21 @@ With the singular goal in mind to make our products better by taking into accoun
 
 ****Guidelines****
 
-1. Anyone is welcome to try out the products deployed onto the public Polkadex testnet
+1. Anyone is welcome to try out the products deployed onto Kaizen (the public Polkadex testnet)
 2. If you find any bugs that the team might have missed or if you feel that something can be improved, you are encouraged to log an issue with your feedback on this GitHub repository
-3. Provide your Polkadex Blockchain account Address that has a verified On-chain identity in the following format onchainaddress:{Insert your onchain address within the braces} at the end of the description of each issue you log
+3. Provide your Polkadex Blockchain account address with a verified on-chain identity in the following format onchainaddress:{Insert your onchain address within the braces} at the end of the description of each issue you log
 4. The Polkadex team will constantly evaluate logged issues and rate them as 'Critical,' 'Moderate' or 'Normal' based on their severity or their value-add to the product
 5. The team will evaluate the feedback in cycles of 45 day periods to provide these ratings
 6. Polkadex Inc will put a Polkadex Treasury Proposal for $3,500 worth of PDEX to form a rewards pool before the beginning of every feedback cycle
 7. If the treasury proposal is approved, the upcoming feedback cycle will be a Rewarded Cycle
 8. If the treasury proposal is denied, the upcoming feedback cycle will be an Unrewarded Cycle
 9. The Polkadex team will announce if a cycle is Rewarded or Unrewarded through Polkadex’s social media channels
-10. Once every 45 days, all the participants who have logged feedback and received ratings will split rewards evenly from the Open Beta PDEX reward pool if the feedback cycle is a 'Rewarded Cycle,' based on the levels as described in the below table
+10. Once every 45 days and if the cycle is a 'Rewarded Cycle', all the participants who have logged feedback and received ratings will evenly split rewards  from the Open Beta PDEX reward pool based on the levels described in the below table
 11. After a 45 day cycle ends, the team will finish rating the issues logged during that cycle within the next 45 days and announce the tallies
-12. Beta Tester agrees that the rating given by Polkadex will be final and undisputable
+12. By participating in the program, beta testers agree that the ratings given by Polkadex will be final and indisputable
 13. Your total rewards earned will be updated on GitHub/released through our social media channel at a later time with your on-chain identity
-14. Only issues with Blockchain Addresses that have a verified On-chain identity will be accepted by Polkadex and will be considered for rewards
-15. Once the ratings are finalized and rewards are calculated, the Polkadex team will let you know the procedure for obtaining the rewards
+14. Only issues with Polkadex addresses that correspond to a verified on-chain identity will be accepted by Polkadex and will be considered for rewards
+15. Once the ratings are finalized and rewards are calculated, the Polkadex team will announce the procedure for claiming the rewards
 16. The cycle restarts again on the 46th day
 17. By participating in the program, you agree to the terms & conditions listed herein
 18. Note: Currently, testers based in the USA are restricted from receiving beta tester rewards based on SEC regulations. Please read T&C carefully.

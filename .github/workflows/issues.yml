@@ -71,7 +71,7 @@ jobs:
         run: pip3 install substrate-interface
 
       - name: Run a one-line script
-        run: python3 script.py "${{ github.event.issue.body }}" 1
+        run: python3 script.py "${{ github.event.issue.body }}" 3
       
       - name: Commit and push changes
         run: |

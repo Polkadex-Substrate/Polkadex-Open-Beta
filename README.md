@@ -80,7 +80,3 @@ Top Tester rewards will be introduced when the team deems that there's a signifi
 **Contact**
 
 1. You can contact us through our discord/telegram channel for any questions/concerns related to the program [here](https://discord.gg/mVvTSBE3JY)
-
-Known Critical Issues: 
-1. Accounts are removed by clearing browser cache/using 'remove from browser option.' But they are not removed from the blockchain. Once the 3 accounts limit is reached, this will throw a proxy limit reached error. New proxy created after clearing the old proxies from blockchain instead of frontend doesn’t work. New Accounts created won’t show up.
-2. UI: Remove Proxy Account window doesn't have a close option. Real time updates at various places need to be added. Recent Trades component needs to be refactored.

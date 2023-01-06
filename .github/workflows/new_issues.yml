@@ -49,5 +49,5 @@ jobs:
       - name: Label issues
         uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
         with:
-          add-labels: "Nov17-Dec31"
+          add-labels: "Jan1-Feb14"
           repo-token: ${{ secrets.GITHUB_TOKEN }}   

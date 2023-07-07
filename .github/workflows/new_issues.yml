@@ -38,16 +38,33 @@ jobs:
         uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
         with:
           add-labels: "Unconfirmed"
-          repo-token: ${{ secrets.GITHUB_TOKEN }} 
-  
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+  resolve-label:
+    name: Resolve label for current cycle
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Resolve label
+        id: label
+        run: |
+          RESOLVED_LABEL=$(./support/scripts/cycle-calculator.sh)
+          echo "$RESOLVED_LABEL"
+          echo "cycle-label=${RESOLVED_LABEL}" >> "$GITHUB_OUTPUT"
+    outputs:
+      cycle-label: ${{ steps.label.outputs.cycle-label }}
+
   label_issues_new_cycle:
+    needs: resolve-label
     runs-on: ubuntu-latest
     permissions:
       issues: write
-
     steps:
       - name: Label issues
         uses: andymckay/labeler@e6c4322d0397f3240f0e7e30a33b5c5df2d39e90
         with:
-          add-labels: "May16-June29-2023"
-          repo-token: ${{ secrets.GITHUB_TOKEN }}   
+          add-labels: ${{ needs.resolve-label.outputs.cycle-label }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
